@@ -5,6 +5,7 @@ import {
   CompetitionsIcon,
   HomeIcon,
   PilotsIcon,
+  TeamsIcon,
   SeasonsIcon,
 } from "../ui/icons";
 
@@ -30,6 +31,7 @@ const NavItem: React.FC<Props> = ({ link, active }) => {
       {link === "Seasons" && <SeasonsIcon className={iconClasses} />}
       {link === "Competitions" && <CompetitionsIcon className={iconClasses} />}
       {link === "Pilots" && <PilotsIcon className={iconClasses} />}
+      {link === "Teams" && <TeamsIcon className={iconClasses} />}
       <span>{link || "Home"}</span>
     </Link>
   );
