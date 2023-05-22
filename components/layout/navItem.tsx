@@ -4,10 +4,10 @@ import Link from "next/link";
 import {
   CompetitionsIcon,
   HomeIcon,
-  PilotsIcon,
-  TeamsIcon,
   JudgesIcon,
+  PilotsIcon,
   SeasonsIcon,
+  TeamsIcon,
 } from "../ui/icons";
 
 interface Props {
