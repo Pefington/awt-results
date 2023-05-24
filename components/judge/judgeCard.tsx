@@ -17,7 +17,6 @@ const JudgeCard = ({ judge }: Props) => {
   const {
     civlid,
     name,
-    // photo_highres: photo,
     country,
     level,
   } = judge;
@@ -29,8 +28,7 @@ const JudgeCard = ({ judge }: Props) => {
     fetcher
   );
 
-  const photo = pilot?.photo_highres;
-  // const photo = "/martin-wyall-RYAUYkia-cI-unsplash.jpg";
+  const photo = pilot?.photo
 
   return (
     <Link
