@@ -15,6 +15,7 @@ type Pilot = components["schemas"]["Pilot"];
 
 const JudgeCard = ({ judge }: Props) => {
   const {
+    _id,
     civlid,
     name,
     country,
@@ -30,9 +31,10 @@ const JudgeCard = ({ judge }: Props) => {
 
   const photo = pilot?.photo
 
+
   return (
     <Link
-      key={civlid}
+      key={_id}
       title={`See ${name}'s profile`}
       href={`/pilots/${civlid}/${urlName}`}
       className={classNames(
